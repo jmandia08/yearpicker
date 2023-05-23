@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="FP" constructor="yearpicker" version="0.0.1" display-name-key="yearpicker" description-key="yearpicker description" control-type="standard" >
+   <type-group name="dateonly">
+      <type>DateAndTime.DateOnly</type>
+
+   </type-group>
+    <property name="controlValue" display-name-key="Control Value" description-key="Control value description." of-type-group="dateonly" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="./component/yearPickerCSS.scss" order="1" />
+    </resources>
+
+  </control>
+</manifest>

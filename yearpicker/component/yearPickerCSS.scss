@@ -1,0 +1,81 @@
+.yearpicker_drpdown {
+    visibility: hidden;
+}
+
+.yearPicker-Container {
+    display: grid !important;
+    padding: 10px;
+}
+
+.yearPicker-ContainerA {
+    display: flex !important;
+
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #0078d4;
+}
+
+.year-list {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow: auto;
+    background: white;
+    gap: 5px;
+
+    .year-picker {
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .year-picker-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .year-picker-header button {
+        background: #0078d4;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .year-picker-header button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    .year-picker-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    .year-option {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    .year-option:hover {
+        background: #6cc0e1;
+        color: #fff;
+    }
+
+    .year-option.selected {
+        background: #0078d4;
+        color: #fff;
+    }
+
+}
